@@ -84,7 +84,7 @@ affinity: {}
 
 secretMessage:
   create: true
-  message: "Este el helm chart de EducacionIT"
+  message: "Hola DevOps soy una nueva version del Chart!"
 
 PersistentVolume:
   enabled: true
