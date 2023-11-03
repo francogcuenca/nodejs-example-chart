@@ -2,11 +2,16 @@ apiVersion: v1
 kind: Service
 metadata:
   name: {{ include "helm-chart.fullname" . }}-service
+  annotations:
+    service.beta.kubernetes.io/aws-load-balancer-type: "elb"  # Añade la anotación para el ELB, si es necesario.
   labels:
     {{- include "helm-chart.labels" . | nindent 4 }}
 spec:
-  type: {{ .Values.service.type }}
+  type: {{ .Values.service.type }}  # Cambiado de {{ .Values.service.type }} a LoadBalancer
   ports:
     - port: {{ .Values.service.port }}
       targetPort: {{ .Values.service.targetPort }}
       protocol: TCP
+  selector:
+    {{- include "helm-chart.selectorLabels" . | nindent 4 }}  # Asegúrate de incluir los selectores apropiados
+
