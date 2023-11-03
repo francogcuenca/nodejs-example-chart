@@ -9,4 +9,7 @@ spec:
   resources:
     requests:
       storage: {{ .Values.PersistentVolumeClaim.size}} # Asegúrate de cambiar esto según tus necesidades
+{{- if .Values.PersistentVolumeClaim.storageClass }}
+  storageClassName: {{ .Values.PersistentVolumeClaim.storageClass }}
+{{- end }}
 {{- end}} 
