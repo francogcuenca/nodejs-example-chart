@@ -84,7 +84,7 @@ affinity: {}
 
 secretMessage:
   create: true
-  message: "Hola DevOps soy una nueva version del Chart!"
+  message: "Hola DevOps soy otra nueva version del Chart!"
 
 PersistentVolume:
   enabled: true
