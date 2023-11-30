@@ -3,6 +3,16 @@ entries:
   nodejs-example-chart:
   - apiVersion: v2
     appVersion: v1.0.3
+    created: "2023-11-30T18:38:07.398645692Z"
+    description: Este es nuestro template de la clase de EducacionIT
+    digest: b2f5a03d0a3576ce0ce7af18f603d84d51173e9815cc84a20586e381dcb77546
+    name: nodejs-example-chart
+    type: application
+    urls:
+    - https://github.com/francogcuenca/nodejs-example-chart/releases/download/nodejs-example-chart-0.1.6/nodejs-example-chart-0.1.6.tgz
+    version: 0.1.6
+  - apiVersion: v2
+    appVersion: v1.0.3
     created: "2023-11-30T17:30:18.285706151Z"
     description: Este es nuestro template de la clase de EducacionIT
     digest: 5e8460b2fe18e5bab0743947eb978bfd840c04f3e07b4eb84d251bbf736b7788
@@ -21,4 +31,4 @@ entries:
     urls:
     - https://github.com/francogcuenca/nodejs-example-chart/releases/download/nodejs-example-chart-0.1.1/nodejs-example-chart-0.1.1.tgz
     version: 0.1.1
-generated: "2023-11-30T17:30:18.285715078Z"
+generated: "2023-11-30T18:38:07.398664087Z"
